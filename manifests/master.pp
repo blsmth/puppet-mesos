@@ -135,7 +135,7 @@ class mesos::master(
   }
 
   create_resources(mesos::property,
-    mesos_hash_parser($merged_options, 'master'),
+    mesos_hash_parser($merged_options),
     {
       dir    => $conf_dir,
       owner  => $owner,

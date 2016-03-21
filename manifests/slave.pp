@@ -189,7 +189,7 @@ class mesos::slave (
   }
 
   create_resources(mesos::property,
-    mesos_hash_parser($merged_options, 'slave'),
+    mesos_hash_parser($merged_options),
     {
       dir    => $conf_dir,
       owner  => $owner,
